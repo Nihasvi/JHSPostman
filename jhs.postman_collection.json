@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "18c5539c-83dd-4fd4-8151-e7bc3f7bfc2b",
+		"name": "jhs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16474229"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passcode\": \"Rjil@12345\", \r\n    \"mno\": \"rambabu@assettl.com\", \r\n    \"device_id\": \"7765f5d4-9a55-4c09-8461-717bdd363d5f\",\r\n    \"type\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://183.82.2.55:3200/jhsmobileapi/mobile/mobilecustomer/v6/login",
+					"protocol": "http",
+					"host": [
+						"183",
+						"82",
+						"2",
+						"55"
+					],
+					"port": "3200",
+					"path": [
+						"jhsmobileapi",
+						"mobile",
+						"mobilecustomer",
+						"v6",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verifyotp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    \"otp\": \"661443\",\r\n    \"mno\": \"7659976292\"\r\n}"
+				},
+				"url": {
+					"raw": "https://sit.jiohumsafar.jio.com/jhsmobileapi/mobile/mobilecustomer/v2/verifyotp",
+					"protocol": "https",
+					"host": [
+						"sit",
+						"jiohumsafar",
+						"jio",
+						"com"
+					],
+					"path": [
+						"jhsmobileapi",
+						"mobile",
+						"mobilecustomer",
+						"v2",
+						"verifyotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passcode\": \"Rjil@12345\", \r\n    \"mno\": \"rambabu@assettl.com\",\r\n    \"type\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://183.82.2.55:3200/jhsmobileapi/mobile/mobilecustomer/v6/token",
+					"protocol": "http",
+					"host": [
+						"183",
+						"82",
+						"2",
+						"55"
+					],
+					"port": "3200",
+					"path": [
+						"jhsmobileapi",
+						"mobile",
+						"mobilecustomer",
+						"v6",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
